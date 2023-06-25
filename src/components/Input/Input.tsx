@@ -1,5 +1,5 @@
 import styles from "./styles.module.css" 
-import useEffect from "react"
+ 
  import {ChangeEvent} from "react"
 interface InputTypes {
     placeholder : string,

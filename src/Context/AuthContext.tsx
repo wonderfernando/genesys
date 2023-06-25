@@ -1,7 +1,7 @@
 import {createContext,useEffect,useState} from "react"
 import { TOKEN_POST, USER_GET } from "../services/api/AUTH";
 import { AuthLoginContextType } from "../Types";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 export const UserContext = createContext<AuthLoginContextType>(null!);
 
@@ -42,25 +42,7 @@ export function AuthContext({children} : {children: JSX.Element} ) {
      //     setError("Senha ou numero errado")
         }
     }
-    async function autoLogin() {
-        const token = window.localStorage.getItem("token")
-        if(token){
-            const {url, options} = USER_GET(token);
-            const response = await fetch(url, options)
-            if (response.status == 200) {
-                const json = await response.json()
-                setData(json)
-                setError(null!)
-                setLogin(true)
-                setLoading(false)
-                navigate("/")
-            }
-        }else{
-            setLoading(false)
-            setError("Precisa fazer login primeiro")
-            
-        }
-    }
+    
     async function getUser(token: string) {
         const {url, options} = USER_GET(token)
         const response =  await fetch(url,options)

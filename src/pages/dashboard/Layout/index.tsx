@@ -1,11 +1,11 @@
-import Header from "../../../components/Header"
+
 import styles from "./styles.module.css"
 import { SideBar } from "../../../components/SideBar"
 import { Route, Routes } from "react-router-dom"
 import Home from "../Home/Home"
 import Costumer from "../Costumer"
  import NavBar from "../../../components/NavBar"
-import { Footer } from "../../../components/Footer"
+
 import { useState } from "react"
 import Plan from "../Plan"
 import Signature from "../Signature"

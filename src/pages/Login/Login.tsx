@@ -1,14 +1,14 @@
 import styles from "./styles.module.css"
 import useForm from "../../Hooks/useForm"
 import Input from "../../components/Input/Input"
-import { TOKEN_POST, USER_GET } from "../../services/api/AUTH"
-import { useContext, useEffect, } from "react"
+
+import { useContext, } from "react"
  import {UserContext} from "../../Context/AuthContext";
-import { Link, Navigate, redirect,useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Login() {
 
-    const {userLogin, login, error } = useContext(UserContext);
+    const {userLogin, error } = useContext(UserContext);
     const phone = useForm()
     const password = useForm()
   
