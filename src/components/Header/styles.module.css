@@ -1,0 +1,14 @@
+.menuNavBar{
+    display: flex;
+}
+.menuNavBar li{
+    margin-left: 1rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 4px 4px 5px #333;
+    height: 8vh;
+}

@@ -1,0 +1,37 @@
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 10px;
+    width: 100%;
+    background: #f2f4f6;
+    height: 8vh;
+}
+.conteiner div{
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.img{
+    border-radius: 50%;
+}
+.conteiner button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 18pt;
+  cursor: pointer;  
+  border-radius: 6px;
+}
+.conteiner button:focus{
+  outline: 0;
+}
+
+.conteiner button:hover {
+  background: rgba(0,0,0,0.1);
+}
+ 
+.conteiner button{
+    color: #333;
+}
