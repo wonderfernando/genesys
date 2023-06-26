@@ -4,7 +4,7 @@ import Input from "../../components/Input/Input"
 
 import { useContext, } from "react"
  import {UserContext} from "../../Context/AuthContext";
-import { Link } from "react-router-dom"
+
 
 export default function Login() {
 
@@ -31,7 +31,6 @@ export default function Login() {
                        <Input value={password.value} error={password.error} onChange={password.onChange} color="#fff" type="text" background="#242424" placeholder="Palavra-Passe"/>  
                   </div>
                   <button onClick={onClick} className={styles.btn}>Entrar</button>
-                   <Link to="/">Recuperar Senha</Link>
                 </div>
         </div>
     )

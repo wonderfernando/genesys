@@ -25,6 +25,11 @@
     border: 0;
     outline: none;
     transition: 300ms;
+    padding: 1rem 1rem;
+    font-size: 12pt;
+    color:#fff;
+    border-radius: .2rem;
+    cursor: pointer;
 }
 .btn:hover{
     background: #05789baa;      
