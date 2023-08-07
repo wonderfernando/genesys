@@ -13,10 +13,8 @@ export default function Login() {
     const password = useForm()
   
     const onClick = async () => {
-        if (phone.validate() && password.validate()) {
-            userLogin(phone.value, password.value)
-        }   
-     
+         userLogin(phone.value, password.value)
+      
     }
  
     return (

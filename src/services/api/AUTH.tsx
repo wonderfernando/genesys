@@ -1,17 +1,17 @@
 import { URL_BASE } from "./Api"
 
-export const TOKEN_POST = (body: any) => {
+export const TOKEN_POST = (data: {phone:string,password:string}) => {
     return {
         url: `${URL_BASE}/admin/login`,
         options: {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
+            method:"POST",
+             headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
+            body: JSON.stringify(data),
             
-            body: JSON.stringify(body)
-        }
-
+        },
     }
 }
     export const USER_GET = (token: string) => {
@@ -19,9 +19,9 @@ export const TOKEN_POST = (body: any) => {
             url: `${URL_BASE}/user/token`,
             
             options: {
-                method: "GET",
+                method: "POST",
                 headers: {
-                    "Content-Type": "application/json",
+                    Accept: "application/json",
                     Authorization: "Bearer "+ token
                 },
             }
